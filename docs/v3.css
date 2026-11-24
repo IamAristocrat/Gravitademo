@@ -1,0 +1,39 @@
+
+/* Gravita V3 | V7-integrated editorial and engineering visual layer.
+   Original schematics are illustrative; they are not construction drawings. */
+.v3-showcase{background:#f2f8f6;color:#092d4d;padding:clamp(65px,8vw,125px) 0;position:relative}
+.v3-showcase::before{content:"";position:absolute;inset:0 0 auto;height:8px;background:linear-gradient(90deg,#065a67 0 39%,#1da9a6 39% 72%,#f26548 72%)}
+.v3-showcase .v3-top{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.v3-showcase h2{font-size:clamp(36px,4.5vw,72px);line-height:1.02;letter-spacing:-.055em;margin:12px 0}
+.v3-showcase .v3-lead{max-width:440px;font-size:17px;line-height:1.7}
+.v3-engineering-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.v3-engineering-grid a{display:block;background:white;color:#0b304d;text-decoration:none;border:1px solid #d5e7e5;box-shadow:0 20px 36px #064a4c0a;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.v3-engineering-grid a:hover,.v3-engineering-grid a:focus-visible{transform:translateY(-5px);box-shadow:0 26px 56px #064a4c25;outline:2px solid #168f91;outline-offset:3px}
+.v3-engineering-grid img{width:100%;height:auto;aspect-ratio:1.67;object-fit:cover;background:#f0f7f4}
+.v3-engineering-grid div{padding:18px 22px 24px}
+.v3-engineering-grid span{color:#158787;letter-spacing:.12em;font-size:11px;font-weight:800}
+.v3-engineering-grid h3{font-size:23px;margin:7px 0 5px}
+.v3-engineering-grid p{font-size:14px;line-height:1.6;margin:0;color:#556d75}
+.v3-showcase .v3-footnote{font-size:12px;opacity:.75;margin:24px 0 0}
+.v3-leadership{background:linear-gradient(110deg,#063f48,#06314e);color:#fff;padding:clamp(55px,8vw,100px) 0}
+.v3-leadership .v3-l-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(30px,6vw,88px);align-items:center}
+.v3-leadership img{width:100%;max-height:370px;object-fit:contain;background:#eaf4f0;border:1px solid #81bdb65c}
+.v3-leadership h2{font-size:clamp(32px,4.8vw,66px);line-height:1.04}
+.v3-leadership p{color:#d7e6e5;line-height:1.75}
+.v3-leadership .v3-kicker{color:#55ccc8;font-size:12px;letter-spacing:.14em;font-weight:800}
+.v3-mini-metrics{display:flex;gap:22px;flex-wrap:wrap;border-top:1px solid #ffffff45;padding-top:18px;margin-top:20px}
+.v3-mini-metrics strong{display:block;font-size:26px;color:#fff}
+.v3-mini-metrics small{display:block;color:#c0d8d7}
+.v3-profile-note{display:flex;gap:15px;align-items:start;padding:22px 24px;background:#f3f8f7;border-left:4px solid #0a858c;margin:22px 0;color:#17384d;line-height:1.65}
+.v3-profile-note strong{display:block;white-space:nowrap}
+.v3-visual{display:block;width:100%;background:#eff7f4;border:1px solid #dbe7e5;max-height:500px;object-fit:cover}
+.v3-method{padding:24px;background:#f5f9f7;margin:28px 0}
+.v3-method p{font-size:13px;color:#456873}
+.v3-method img{width:100%;display:block}
+.v3-heritage{background:#073c50;color:white;padding:36px 0}
+.v3-heritage .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.v3-heritage strong{font-size:clamp(20px,2.5vw,30px)}
+.v3-heritage p{margin:0;color:#c9e2df}
+@media(max-width:960px){.v3-engineering-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.v3-leadership .v3-l-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.v3-engineering-grid{grid-template-columns:1fr}.v3-showcase .v3-lead{max-width:100%}.v3-profile-note{display:block}.v3-profile-note strong{white-space:normal}}
+@media(prefers-reduced-motion:reduce){.v3-engineering-grid a{transition:none}}
